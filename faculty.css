@@ -1,0 +1,187 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(3-wallppr.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.faculties{
+    float: left;
+    width: 25%;
+    padding: 25px 15px;
+}
+
+.main{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    padding: 20px 0;
+    font-size: 45px;
+}
+
+.card{
+    width: 500px;
+    max-width: 100%;
+    min-height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 25);
+    -moz-box-shadow: 0 10px 10px 0;
+    box-shadow: 0 10px 10px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.info{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    transform: translateY(100%)
+    translateY(-60px)
+    translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+.info::before{
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(4px);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    transform: translateY(-100%)
+    translateY(88px)
+    translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+.title-faculty{
+    margin: 0;
+    padding: 24px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    color: #000;
+}
+
+.description{
+    margin: 0;
+    padding: 0 24px 24px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.card:hover .info,
+.card:hover .info::before{
+    transform: translateY(0) translateX(0);
+}
+
+.card.bio{
+    background-image: url("https://media.istockphoto.com/photos/corona-virus-covid19-dna-illustration-picture-id1297202819?b=1&k=20&m=1297202819&s=170667a&w=0&h=Vs7-6B_3lF_NQn5UfxWSR7G2ORkoJkWfUTHkPOkh_nk=");
+}
+
+.info.bio::before{
+    background-image: url("https://media.istockphoto.com/photos/corona-virus-covid19-dna-illustration-picture-id1297202819?b=1&k=20&m=1297202819&s=170667a&w=0&h=Vs7-6B_3lF_NQn5UfxWSR7G2ORkoJkWfUTHkPOkh_nk=");
+}
+
+.card.physics{
+    background-image: url("https://wallpaperaccess.com/full/1133458.jpg");
+}
+
+.info.physics::before{
+    background-image: url("https://wallpaperaccess.com/full/1133458.jpg");
+}
+
+.card.math{
+    background-image: url("https://media.istockphoto.com/photos/4k-futuristic-network-artificial-intelligence-global-communication-picture-id1281974062?k=20&m=1281974062&s=612x612&w=0&h=1y9hPyvZO_dvVCjWh4LMSLY0H9RKQ9liQVuLLW1xju4=");
+}
+
+.info.math::before{
+    background-image: url("https://media.istockphoto.com/photos/4k-futuristic-network-artificial-intelligence-global-communication-picture-id1281974062?k=20&m=1281974062&s=612x612&w=0&h=1y9hPyvZO_dvVCjWh4LMSLY0H9RKQ9liQVuLLW1xju4=");
+}
+
+.card.chemistry{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/588/950/418/technology-physics-and-chemistry-chemistry-hd-wallpaper-preview.jpg");
+}
+
+.info.chemistry::before{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/588/950/418/technology-physics-and-chemistry-chemistry-hd-wallpaper-preview.jpg");
+}
+
+.card.code{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/304/550/447/coding-computer-hacker-hacking-wallpaper-preview.jpg");
+}
+
+.info.code::before{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/304/550/447/coding-computer-hacker-hacking-wallpaper-preview.jpg");
+}
+
+.card.tech{
+    background-image: url("https://c0.wallpaperflare.com/preview/262/991/578/dna-genetic-material-helix-proteins.jpg");
+}
+
+.info.tech::before{
+    background-image: url("https://c0.wallpaperflare.com/preview/262/991/578/dna-genetic-material-helix-proteins.jpg");
+}
+
+.card.stats{
+    background-image: url("https://wallpaperaccess.com/full/2871610.jpg");
+}
+
+.info.stats::before{
+    background-image: url("https://wallpaperaccess.com/full/2871610.jpg");
+}
